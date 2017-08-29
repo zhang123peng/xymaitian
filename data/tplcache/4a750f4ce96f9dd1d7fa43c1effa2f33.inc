@@ -1,0 +1,1 @@
+</a><a href="[field:typelink /]" class="blue_bt">

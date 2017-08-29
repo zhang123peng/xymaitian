@@ -1,0 +1,83 @@
+<div class="main_foot">
+    <div class="foot">
+      <div class="foot_logo"> <img src="/style/images/foot_logo.png" width="150"/>
+        <p style="font-size:16px; margin:5px 0 0 5px; color:#333;">专注用户体验设计与开发</p>
+      </div>
+      <div class="con">
+        <ul class="list1">
+          <li>
+           {dede:type typeid='10'}<h1>[field:typename /]</h1>{/dede:type}
+          </li>
+          <li><a href="/html/service/#templatemo1">服务体系</a></li>
+          <li><a href="/html/service/#templatemo2">解决方案</a></li>
+          <li><a href="/html/service/#templatemo3">服务优势</a></li>
+          <li><a href="/html/service/#templatemo4">合作流程</a></li>
+          <li><a href="/html/service/#templatemo5">服务客户</a></li>
+        </ul>
+        </ul>
+        <ul class="list1">
+          <li>
+            {dede:type typeid='5'}<h1>[field:typename /]</h1>{/dede:type}
+          </li>
+          {dede:channel type='son' typeid='5'}
+          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+        <ul class="list1">
+          <li>
+            {dede:type typeid='2'}<h1>[field:typename /]</h1>{/dede:type}
+          </li>
+          {dede:channel type='son' typeid='2'}
+          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+        <ul class="list1">
+          <li>
+            {dede:type typeid='11'}<h1>[field:typename /]</h1>{/dede:type}
+          </li>
+          {dede:channel type='son' typeid='11'}
+          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+      <ul class="list2">
+        <li>
+          <h1>商务合作</h1>
+        </li>
+        <li>邮箱：{dede:global.cfg_yx/}</li>
+        <li>手机：{dede:global.cfg_sj/}</li>
+        <li>座机：{dede:global.cfg_dh/}</li>
+        <li>Q&nbsp;Q：{dede:global.cfg_qq/} <a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" target="_blank"><i class="qq"></i>点击交谈</a></li>
+        <li>地址：{dede:global.cfg_dz/}</li>
+      </ul>
+    </div>
+    <div class="foot_bottom">
+      <p>友情链接： {dede:flink row='24'}[field:link /]{/dede:flink}</p>
+      <p>{dede:global.cfg_powerby/} {dede:global.cfg_beian/} </p>
+    </div>
+  </div>
+  <div class="eject">
+    <div class="theme-mask"></div>
+    <div class="popover1">
+      <dl>
+        <dd> <img src="/style/images/dierwei_03.jpg"/> </dd>
+        <dt> 扫描二维码关注我们：AB模版网 </dt>
+        <dt> <a href="javascript:void(0)" class="close">确 认</a> </dt>
+      </dl>
+    </div>
+  </div>
+  <script type="text/javascript">
+$(document).ready(function($){
+$('.weixin2').click(function(){
+$('.theme-mask').show();
+$('.theme-mask').height($(document).height());
+$('.popover1').slideDown(200);
+})
+$('.close').click(function(){
+$('.theme-mask').hide();
+$('.popover1').slideUp(200);
+
+})
+
+})
+</script> 

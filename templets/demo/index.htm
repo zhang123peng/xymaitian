@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by adminbuy.cn"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+<meta name="format-detection" content="telephone=no"/>
+<link href="/style/css/menu.css" rel="stylesheet"/>
+<link href="/style/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/style/css/load6.css" rel="stylesheet" type="text/css"/>
+<link href="/style/css/ext.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/style/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/style/js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="/style/js/respond.js"></script>
+<script type="text/javascript" src="/style/js/jquery.royalslider.min.js"></script>
+<script type="text/javascript" src="/style/js/nprogress.js"></script>
+<script type="text/javascript" src="/style/js/qrcode.js"></script>
+<script type="text/javascript" src="/style/js/respond.js"></script>
+</head>
+<body>
+<div class="fade out">
+
+  {dede:include filename="demo/head.htm"/}
+  <div class="sliderContainer fullWidth clearfix">
+    <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+      {dede:arclist row='5' titlelen='36' typeid='15'}
+      <div class="rsContent"><a><img class="rsImg" src="[field:litpic/]"/></a></div>
+      {/dede:arclist}
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(document).ready(function($) {
+$('#full-width-slider').royalSlider({
+arrowsNav: true,
+loop: false,
+keyboardNavEnabled: true,
+controlsInside: false,
+imageScaleMode: 'fill',
+arrowsNavAutoHide: false,
+autoScaleSlider: true, 
+autoScaleSliderWidth: 960,     
+autoScaleSliderHeight:350,
+controlNavigation: 'bullets',
+thumbsFitInViewport: false,
+navigateByClick: true,
+startSlideId: 0,
+autoPlay: false,
+transitionType:'move',
+globalCaption: true,
+deeplinking: {
+enabled: true,
+change: false
+},
+imgWidth: 1920,
+imgHeight: 563
+});
+});
+</script>
+  <div class="case_main">
+    <div class="case">
+      <div class="title">
+        <h1>我们积累了各行业丰富的案例和经验</h1>
+        <span>
+        {dede:channel type='son' typeid='5'}
+        <a href='[field:typeurl/]'>[field:typename/]</a> / 
+        {/dede:channel}
+        </span> </div>
+      <div class="case_con">
+        {dede:arclist row='9' titlelen='36' typeid='5'}
+        <dl>
+          <dd style="background:url([field:litpic/]) no-repeat center top; background-size:cover;"> <a href="[field:arcurl/]" title="Jackery app"></a> </dd>
+        </dl>
+       {/dede:arclist}
+      </div>
+    </div>
+  </div>
+  <div class="service1">
+    <div class="title">
+      <h1>我们专注用户体验设计和开发</h1>
+    </div>
+    <div class="con">
+      <dl>
+        <dd> <img src="/style/images/service_bt_04.png"/> </dd>
+        <dt>
+          <h2>交互原型设计</h2>
+        </dt>
+        <dt> 信息架构 </dt>
+        <dt> 低保真原型 </dt>
+        <dt> 界面布局 </dt>
+        <dt> 快速原型 </dt>
+        <dt> 产品原型 </dt>
+      </dl>
+      <dl>
+        <dd> <img src="/style/images/service_bt_06.png"/> </dd>
+        <dt>
+          <h2>产品视觉设计</h2>
+        </dt>
+        <dt> 视觉设计 </dt>
+        <dt> 设计规范与风格指南 </dt>
+        <dt> 品牌形象 </dt>
+        <dt> 图标设计 </dt>
+        <dt> 前端架构及开发 </dt>
+      </dl>
+      <dl>
+        <dd> <img src="/style/images/service_bt_08.png"/> </dd>
+        <dt>
+          <h2>网站设计与开发</h2>
+        </dt>
+        <dt> 品牌网站设计开发 </dt>
+        <dt> 展示营销网站 </dt>
+        <dt> 电子商务网站 </dt>
+        <dt> 手机网站/响应式网站 </dt>
+        <dt> 前端开发与测试 </dt>
+      </dl>
+      <dl>
+        <dd> <img src="/style/images/service_bt_10.png"/> </dd>
+        <dt>
+          <h2>移动产品设计</h2>
+        </dt>
+        <dt> 移动界面设计 </dt>
+        <dt> iOS/Android界面设计 </dt>
+        <dt> 微信公众平台 </dt>
+        <dt> html5设计开发 </dt>
+        <dt> 移动网站设计开发 </dt>
+      </dl>
+      <dl>
+        <dd> <img src="/style/images/service_bt_12.png"/> </dd>
+        <dt>
+          <h2>软件界面设计</h2>
+        </dt>
+        <dt> Windows软件界面设计 </dt>
+        <dt> MacOS软件界面设计 </dt>
+        <dt> 车载软件界面 </dt>
+        <dt> 电视界面 </dt>
+        <dt> 其他终端软件界面 </dt>
+      </dl>
+      <dl>
+        <dd> <img src="/style/images/service_bt_14.png"/> </dd>
+        <dt>
+          <h2>品牌及平面设计</h2>
+        </dt>
+        <dt> 标志设计及企业VI体系 </dt>
+        <dt> 产品平面设计 </dt>
+        <dt> 手绘插画 </dt>
+        <dt> 二维动画 </dt>
+        <dt> 广告设计 </dt>
+      </dl>
+    </div>
+  </div>
+  <div class="about">
+    <h1>我们是设计师、工程师、梦想者<br/>
+      也是您的用户体验专家</h1>
+    <p>AB模版网（www.adminbuy.cn）成立于2010年，我们是一家专注用户体验设计与互联网品牌建设的设计公司，创立至今为200多位客户提供了创新与专业的设计方案。设计服务范围包括：交互原型设计、产品视觉设计、网站设计与开发建设、移动及软件产品界面设计、图标设计、品牌及平面设计等。我们的价值与宗旨是为用户和客户打造最nice的设计，用设计提升产品和企业价值。</p>
+    {dede:type typeid='1'}<a href="[field:typeurl/]#templatemo4">咨询我们</a> <a href="[field:typeurl/]">了解更多</a>{/dede:type} </div>
+  <div class="project">
+    <div class="title">
+      <h1>如何练就优秀的项目体验</h1>
+      <span>创意、流程、执行缺一不可</span> </div>
+    <div class="project_con">
+      {dede:arclist row='6' titlelen='36' typeid='2'}
+      <dl>
+        <dd style="background:url([field:litpic/]) no-repeat center center; background-size:cover;"> <a href="[field:arcurl/]" title="[field:title/]"></a> </dd>
+        <dt>[field:description function='cn_substr(@me,120)'/]...</dt>
+      </dl>
+      {/dede:arclist}
+    </div>
+  </div>
+  <div class="client">
+    <div class="title">
+      <h1>他们选择了AdminBuy.Cn</h1>
+      <span>客户是我们服务的遵旨</span> </div>
+    <div class="client_list">
+      <ul>
+        <li><img src="/style/images/l1.jpg"/></li>
+        <li><img src="/style/images/l2.jpg"/></li>
+        <li><img src="/style/images/l3.jpg"/></li>
+        <li><img src="/style/images/l4.jpg"/></li>
+        <li><img src="/style/images/l5.jpg"/></li>
+        <li><img src="/style/images/l6.jpg"/></li>
+        <li><img src="/style/images/l7.jpg"/></li>
+        <li><img src="/style/images/l8.jpg"/></li>
+        <li><img src="/style/images/l9.jpg"/></li>
+        <li><img src="/style/images/l10.jpg"/></li>
+        <li><img src="/style/images/l11.jpg"/></li>
+        <li><img src="/style/images/l12.jpg"/></li>
+      </ul>
+    </div>
+  </div>
+  {dede:include filename="demo/foot.htm"/}
+</div>
+<script>
+$('body').show();
+$('.version').text(NProgress.version);
+NProgress.start();
+setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 5);
+//--></script> 
+<script type="text/javascript">$(function(){$("#jsa").remove()})</script>
+</body>
+</html>

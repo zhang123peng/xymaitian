@@ -1,0 +1,1 @@
+<div class="jise_big" style="background:url([field:imgsrc/]) no-repeat center top;background-size:cover;"></div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no">
+<link href="/style/css/menu.css" rel="stylesheet" >
+<link href="/style/css/channel.css" rel="stylesheet" >
+<link href="/style/css/base-page.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/style/css/load6.css" rel="stylesheet" type="text/css" />
+<link href="/style/css/ext.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/style/js/jquery-1.8.2.min.js"></script>
+<script type='text/javascript' src="/style/js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="/style/js/respond.js"></script>
+<script type="text/javascript" src="/style/js/jquery.royalslider.min.js?v=9.3.6"></script>
+<script type="text/javascript" src='/style/js/nprogress.js'></script>
+<script type="text/javascript" src='/style/js/qrcode.js'></script>
+</head>
+<body>
+<div class="fade out"> 
+{dede:include filename="head.htm"/}
+  <div class="news_con_banner" style="background:url(/style/images/article-news.jpg) no-repeat center top;background-size:cover;">
+    <h1>{dede:field.title/}</h1>
+  </div>
+  <!--mews_banner-->
+  <div class="news_con_top">
+    <div class="con">
+      <ul>
+        <li><strong>{dede:field.typename/} {dede:field.pubdate function='strftime("%Y-%m-%d",@me)'/} </strong><span>分享新闻到： <a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><i class="iconfont icon-sina">&#xe64d </i></a><a href="javascript:void(0)"class="weixin1"><i class="iconfont icon-wechat">&#xe7f0 </i></a></span></li>
+      </ul>
+      <a href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}" class="more">&lt;返回列表</a></div>
+    <!--con--></div>
+  <!--news_con_top-->
+  <div class="news_con"><br />
+    {dede:field.body/}
+   
+    <div class="show">分享新闻到： <a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><i class="iconfont icon-sina">&#xe64d </i></a><a href="javascript:void(0)" class="weixin1"><i class="iconfont icon-wechat">&#xe7f0 </i></a></div>
+  </div>
+  <!--news_con-->
+  <div class="news_box or">
+    <h1>更多阅读</h1>
+    <div class="news_box_list or">
+      {dede:arclist row='3' titlelen='36' typeid='2'}
+      <dl >
+        <dd style="background:url([field:litpic/]) no-repeat center center; background-size:cover;"><a href="[field:arcurl/]"></a></dd>
+        <dt>
+          <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+        </dt>
+        <dt>[field:typename/]   [field:pubdate function='strftime("%Y-%m-%d",@me)'/]</dt>
+        <dt>[field:description function='cn_substr(@me,100)'/]......<a href="[field:arcurl/]" class="bt">查看全文</a></dt>
+      </dl>
+      {/dede:arclist}
+    </div>
+    <!--news_box_list--><a href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}" class="allnews">返回全部新闻</a></div>
+  <div class="theme-mask"></div>
+  <div class="popover">
+    <dl>
+      <dd>
+        <div id="qrcode"></div>
+      </dd>
+      <dt>扫描二维码分享到微信</dt>
+      <dt><a href="javascript:void(0)" class="close">确 认</a></dt>
+    </dl>
+  </div>
+</div>
+<!--eject--><script>
+    window.onload =function(){
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 200,//设置宽高
+            height : 200
+        });
+        qrcode.makeCode('{dede:global.cfg_basehost/}/{dede:field name='arcurl'/}');
+    }
+</script><script type="text/javascript">
+$(document).ready(function($){
+$('.weixin1').click(function(){
+$('.theme-mask').show();
+$('.theme-mask').height($(document).height());
+$('.popover').slideDown(200);
+})
+$('.close').click(function(){
+$('.theme-mask').hide();
+$('.popover').slideUp(200);
+})
+ 
+})
+$(document).ready(function(e) {
+    $('.news_box_list dl').last().addClass('last')
+});
+</script><!--news_box--> 
+
+{dede:include filename="foot.htm"/}
+</div>
+<script>
+    $('body').show();
+    $('.version').text(NProgress.version);
+    NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 5);
+//--></script>
+</body>
+</html>

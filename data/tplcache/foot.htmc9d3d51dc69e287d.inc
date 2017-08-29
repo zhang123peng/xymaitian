@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("type","<h1>[field:typename /]</h1>",333,395);
+$z[0][4]['typeid']="10";
+$z[1]=Array("type","<h1>[field:typename /]</h1>",865,926);
+$z[1][4]['typeid']="5";
+$z[2]=Array("channel","\r\n          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n          ",955,1087);
+$z[2][4]['type']="son";
+$z[2][4]['typeid']="5";
+$z[3]=Array("type","<h1>[field:typename /]</h1>",1160,1221);
+$z[3][4]['typeid']="2";
+$z[4]=Array("channel","\r\n          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n          ",1250,1382);
+$z[4][4]['type']="son";
+$z[4][4]['typeid']="2";
+$z[5]=Array("type","<h1>[field:typename /]</h1>",1455,1517);
+$z[5][4]['typeid']="11";
+$z[6]=Array("channel","\r\n          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n          ",1546,1679);
+$z[6][4]['type']="son";
+$z[6][4]['typeid']="11";
+$z[7]=Array("global","",1819,1840);
+$z[7][4]['name']="cfg_yx";
+$z[8]=Array("global","",1851,1872);
+$z[8][4]['name']="cfg_yx";
+$z[9]=Array("global","",1904,1925);
+$z[9][4]['name']="cfg_sj";
+$z[10]=Array("global","",1953,1974);
+$z[10][4]['name']="cfg_dh";
+$z[11]=Array("global","",2004,2025);
+$z[11][4]['name']="cfg_qq";
+$z[12]=Array("global","",2071,2092);
+$z[12][4]['name']="cfg_qq";
+$z[13]=Array("global","",2197,2218);
+$z[13][4]['name']="cfg_dz";
+$z[14]=Array("flink","[field:link /]",2306,2354);
+$z[14][4]['row']="24";
+$z[15]=Array("global","",2369,2395);
+$z[15][4]['name']="cfg_powerby";
+$z[16]=Array("global","",2396,2420);
+$z[16][4]['name']="cfg_beian";
+
+?>

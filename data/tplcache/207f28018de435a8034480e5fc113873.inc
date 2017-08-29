@@ -1,0 +1,1 @@
+<div class="rsContent"><a><img class="rsImg" src="[field:litpic/]"/></a></div>
